@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/script.js" defer></script>
   </head>
   <body>
     <div class="desktop">
@@ -25,7 +26,7 @@
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#work">WORKS</a>
         <a href="#contact">CONTACT</a>
-        <a href="mailto:khoaprofcom@gmail.com?subject=Resume%20request">RÉSUMÉ <span>↗</span></a>
+        <button class="resume-trigger" type="button" aria-haspopup="dialog" aria-controls="resume-dialog">RÉSUMÉ <span>↗</span></button>
       </nav>
     </header>
 
@@ -125,5 +126,20 @@
       <a href="#home">BACK TO TOP ↑</a>
     </footer>
     </div>
+    <dialog class="resume-dialog" id="resume-dialog" aria-labelledby="resume-title">
+      <div class="resume-toolbar">
+        <h2 id="resume-title">khoa_resume.pdf</h2>
+        <div class="resume-actions">
+          <a href="src/resume/8a30f4_db6051f20e2445bfa5c488ffaad1dd55.pdf" target="_blank" rel="noreferrer">OPEN IN NEW TAB ↗</a>
+          <a href="src/resume/8a30f4_db6051f20e2445bfa5c488ffaad1dd55.pdf" download>DOWNLOAD ↓</a>
+          <form method="dialog"><button class="resume-close" aria-label="Close résumé viewer">×</button></form>
+        </div>
+      </div>
+      <iframe
+        class="resume-frame"
+        src="src/resume/8a30f4_db6051f20e2445bfa5c488ffaad1dd55.pdf"
+        title="Dang-Khoa's résumé PDF"
+      ></iframe>
+    </dialog>
   </body>
 </html>
