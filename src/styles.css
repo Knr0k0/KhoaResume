@@ -134,7 +134,7 @@ a { color: inherit; }
 .section-heading h2 { margin: 0; font-size: clamp(31px, 4vw, 42px); letter-spacing: -.055em; line-height: 1.1; }
 .section-heading h2 em, .contact h2 em { color: var(--teal); font-family: Georgia, serif; font-weight: 400; }
 .section-index { padding-bottom: 5px; color: #83969a; font-size: 8px; white-space: nowrap; }
-.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 23px 24px; }
+.project-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 14px; }
 .project {
   min-width: 0;
   display: block;
@@ -214,7 +214,7 @@ a { color: inherit; }
   .envelope-icon { width: 62px; height: 43px; margin: 15px auto; }
   .envelope-icon::before { width: 40px; height: 40px; }
   .work { padding: 51px 5% 55px; }
-  .project-grid { gap: 15px 12px; }
+  .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px 12px; }
   .project-window-bar { height: 23px; padding: 0 7px; font-size: 6px; }
   .project h2 { min-height: 56px; padding: 9px; font-size: 8px; }
   .contact { padding: 50px 15px 55px; }
