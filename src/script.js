@@ -1,7 +1,9 @@
 const resumeDialog = document.querySelector("#resume-dialog");
 const resumeTrigger = document.querySelector(".resume-trigger");
 
-resumeTrigger?.addEventListener("click", () => {
+resumeTrigger?.addEventListener("click", (event) => {
+  event.preventDefault();
+
   if (resumeDialog instanceof HTMLDialogElement) {
     resumeDialog.showModal();
   }
